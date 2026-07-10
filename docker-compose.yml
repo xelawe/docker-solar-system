@@ -1,0 +1,12 @@
+services:
+  pi-solar-system:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      # Wie oft (Sekunden) das Bild neu berechnet wird
+      - REFRESH_SECONDS=60
+      # Bildgröße in Pixeln
+      - WIDTH=134
+      - HEIGHT=134
+    restart: unless-stopped
