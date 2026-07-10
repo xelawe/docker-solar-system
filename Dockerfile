@@ -28,7 +28,7 @@ EXPOSE 8080
 # Wie oft (in Sekunden) das Bild neu berechnet wird
 ENV REFRESH_SECONDS=60
 # Bildgröße in Pixeln
-ENV WIDTH=134
-ENV HEIGHT=134
+ENV WIDTH=600
+ENV HEIGHT=600
 
 ENTRYPOINT ["/entrypoint.sh"]
