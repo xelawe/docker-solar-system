@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+WORKDIR /app-1.1
 
 # Repository mit dem Solar-System-Skript klonen
 RUN git clone --depth 1 https://github.com/xelawe/pi-solar-system.git /app
