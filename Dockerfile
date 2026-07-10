@@ -17,6 +17,7 @@ RUN pip install --no-cache-dir Pillow
 
 # Gepatchte main.py (unterstützt WIDTH/HEIGHT über Environment Variablen)
 #COPY main.py /app/main.py
+# ins original Rpo verlagert
 
 # Kleine Startseite, die das generierte Bild anzeigt und alle paar Sekunden neu lädt
 COPY index.html /app/index.html
