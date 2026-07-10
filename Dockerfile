@@ -16,7 +16,7 @@ RUN git clone --depth 1 https://github.com/xelawe/pi-solar-system.git /app
 RUN pip install --no-cache-dir Pillow
 
 # Gepatchte main.py (unterstützt WIDTH/HEIGHT über Environment Variablen)
-COPY main.py /app/main.py
+#COPY main.py /app/main.py
 
 # Kleine Startseite, die das generierte Bild anzeigt und alle paar Sekunden neu lädt
 COPY index.html /app/index.html
